@@ -1,20 +1,31 @@
-import React from 'react';
+import React from "react";
 
-import Icon from '../icon';
-import OutboundLink from '../outbound-link';
+import Icon from "../icon";
+import OutboundLink from "../outbound-link";
 
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
 const Contact = ({ title }) => (
   <div className={styles.contact}>
-    <h1>{title || 'I like messages.'}</h1>
+    <h1>{title || "Let's talk about Decision Science"}</h1>
     <p className={styles.email}>
-      Say hello and send an email:<br />
-      <a href="mailto:saburq@gmail.com?subject=Hello%20Shoaib!" className={styles.link}>saburq@gmail.com</a>
+      Say hello and send us an email:
+      <br />
+      <a
+        href="mailto:team@decision-labs.com?subject=Hello!"
+        className={styles.link}
+      >
+        team@decision-labs.com
+      </a>
     </p>
     <div className={styles.lineBreak} />
     <ul className={styles.social}>
       <li>
+        <OutboundLink to="https://calendly.com/sabman/">
+          <Icon name="calender" /> Book a 30min meeting
+        </OutboundLink>
+      </li>
+      {/*<li>
         <OutboundLink to="https://github.com/sabman/">
           <Icon name="github" /> code
         </OutboundLink>
@@ -34,7 +45,7 @@ const Contact = ({ title }) => (
           <Icon name="medium" /> writings
         </OutboundLink>
       </li>
-      <li>
+       <li>
         <OutboundLink to="https://www.goodreads.com/user/show/15529944-shoaib-burq">
           <Icon name="goodreads" /> reading
         </OutboundLink>
@@ -58,7 +69,7 @@ const Contact = ({ title }) => (
         <OutboundLink to="https://soundcloud.com/sabman">
           <Icon name="soundcloud" /> music
         </OutboundLink>
-      </li>
+      </li> */}
     </ul>
   </div>
 );

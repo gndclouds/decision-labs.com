@@ -1,17 +1,16 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from "react";
+import Link from "gatsby-link";
 
-import ContentPage from '../../components/content-page';
-import Meta from '../../components/meta';
-import OutboundLink from '../../components/outbound-link';
-import Wrapper from '../../components/wrapper';
+import ContentPage from "../../components/content-page";
+import Meta from "../../components/meta";
+import OutboundLink from "../../components/outbound-link";
+import Wrapper from "../../components/wrapper";
 
-import ahmSrc from './img/ahm.png';
-import inlightSrc from './img/inlight.png';
-import lighthouseSrc from './img/lighthouse.png';
+import ahmSrc from "./img/ahm.png";
+import inlightSrc from "./img/inlight.png";
+import lighthouseSrc from "./img/lighthouse.png";
 
-
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
 const About = ({ location }) => (
   <ContentPage>
@@ -19,40 +18,50 @@ const About = ({ location }) => (
     <Wrapper>
       <div className={styles.about}>
         <section className={styles.intro}>
-          <h1>Hello world.</h1>
-          <p>I’m a freelance software developer and geomatics engineer currently situated in Berlin, Germany. I’ve been in the industry since 2005.</p>
-          <p>I studied Computer Science and Geomatic Engineering at The  University of Melbourne.</p>
-
-          <p>On obtaining my degree, I became facinated by the world of underwater mapping and worked on one of first detailed underwater mapping expeditions in coastal Australia.</p>
-
-          <p>After that I worked for the Australian Federal Government where I was responsible for the maintenance of the largest marine samples datasets in Australia.</p>
-
-          <p>In 2009 I lead a team of volunteers through the mapping of the worst bushfires Australia had ever seen and received a <OutboundLink className={styles.link} to="https://www.pmc.gov.au/government/its-honour/national-emergency-medal" >National Emergency Medal</OutboundLink> from the Australian Government.</p>
-
-          <p>I now work on a freelance basis working on both ideas of my own and others. If you have a project in mind, <Link to="/contact">get in touch</Link>.</p>
+          <h1>About Decision Labs</h1>
+          <p>
+            We help our clients achieve efficiencies through digital
+            transformation, develop analytics and data science capabilities.
+          </p>
         </section>
         <aside className={styles.skills}>
           <div>
-            <h3>Skills</h3>
+            <h3>Our Process</h3>
 
-            <h4>Presentation</h4>
-            <p>Bootstrap, Css, Html, Less, Postcss, Sass, Stylus</p>
+            <h4>1. Scoping & Architecture Design</h4>
+            <p>
+              First, we need to understand your problem better. Once we
+              determine there is a fit for Machine Learning, we will work
+              closely together to prepare a roadmap, review the scientific
+              literature, and determine requirements.
+            </p>
 
-            <h4>Javascript</h4>
-            <p>React, React Native, Redux, Webpack</p>
+            <h4>2. Data Collection & Exploration</h4>
+            <p>
+              Machine Learning needs data. If you have data needed to train the
+              models, we will perform an exploratory analysis phase to find
+              patterns and correlations. If you don't, we will collect the data
+              for you using online sources (if possible).
+            </p>
 
-            <h4>Server</h4>
-            <p>Node, PostgreSQL, Rails, Flask, Django</p>
+            <h4>3. Model Development</h4>
+            <p>
+              We run thousands of experiments in parallel to develop a machine
+              learning model. A model is the core of a machine learning system -
+              trained on historical data it can predict the future trends or
+              understand the semantics of a text.
+            </p>
 
-            <h4>Other</h4>
-            <p>CI/CD, Git, Docker</p>
-
-            <h4>Data Engineering</h4>
-            <p>AWS Stack, Elastic Map Reduce</p>
+            <h4>4. Full-stack application development</h4>
+            <p>
+              We integrate the model with a REST API or a front-end application,
+              developing all necessary features to access the model in an
+              user-friendly way. Scalable and with the state-of-the-art
+              security.
+            </p>
           </div>
         </aside>
       </div>
-
     </Wrapper>
   </ContentPage>
 );
