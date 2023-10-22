@@ -1,2 +1,2 @@
-webpackJsonp([0x807299a8edec],{392:function(e,t){e.exports={pathContext:{}}}});
+webpackJsonp([925562913502502e4],{"./node_modules/json-loader/index.js!./.cache/json/work-spendmapp.json":function(o,e){o.exports={pathContext:{}}}});
 //# sourceMappingURL=path---work-spendmapp-a0e39f21c11f6a62c5ab.js.map

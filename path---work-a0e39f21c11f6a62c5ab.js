@@ -1,2 +1,2 @@
-webpackJsonp([32551418774257],{393:function(t,n){t.exports={pathContext:{}}}});
+webpackJsonp([0x1d9af7c0c2f11500],{"./node_modules/json-loader/index.js!./.cache/json/work.json":function(o,n){o.exports={pathContext:{}}}});
 //# sourceMappingURL=path---work-a0e39f21c11f6a62c5ab.js.map

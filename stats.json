@@ -1,44 +1,44 @@
 {
   "assetsByChunkName": {
     "component---src-pages-work-index-jsx": [
-      "component---src-pages-work-index-jsx-6c4fd81c63ecb27d30e3.js",
-      "component---src-pages-work-index-jsx-6c4fd81c63ecb27d30e3.js.map"
+      "component---src-pages-work-index-jsx-6dcb32d7c02ff794519b.js",
+      "component---src-pages-work-index-jsx-6dcb32d7c02ff794519b.js.map"
     ],
     "component---src-pages-work-spacialdb-index-jsx": [
-      "component---src-pages-work-spacialdb-index-jsx-5b5c26bff4f5a9b679c7.js",
-      "component---src-pages-work-spacialdb-index-jsx-5b5c26bff4f5a9b679c7.js.map"
+      "component---src-pages-work-spacialdb-index-jsx-4dc91179557e257c2e39.js",
+      "component---src-pages-work-spacialdb-index-jsx-4dc91179557e257c2e39.js.map"
     ],
     "path---work": [
       "path---work-a0e39f21c11f6a62c5ab.js",
       "path---work-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-work-landuse-index-jsx": [
-      "component---src-pages-work-landuse-index-jsx-3c7e622a561ba2a299d3.js",
-      "component---src-pages-work-landuse-index-jsx-3c7e622a561ba2a299d3.js.map"
+      "component---src-pages-work-landuse-index-jsx-8930f7eb3dc7a4220862.js",
+      "component---src-pages-work-landuse-index-jsx-8930f7eb3dc7a4220862.js.map"
     ],
     "component---src-pages-work-dlgsc-index-jsx": [
-      "component---src-pages-work-dlgsc-index-jsx-d10d134034262091143d.js",
-      "component---src-pages-work-dlgsc-index-jsx-d10d134034262091143d.js.map"
+      "component---src-pages-work-dlgsc-index-jsx-1eca3454034e4e2aa3ea.js",
+      "component---src-pages-work-dlgsc-index-jsx-1eca3454034e4e2aa3ea.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-f2f97d3bfe763ae97205.js",
-      "component---src-layouts-index-jsx-f2f97d3bfe763ae97205.js.map"
+      "component---src-layouts-index-jsx-fa4c60d15bda5dd623ba.js",
+      "component---src-layouts-index-jsx-fa4c60d15bda5dd623ba.js.map"
     ],
     "component---src-pages-contact-index-jsx": [
-      "component---src-pages-contact-index-jsx-44ee2d3e6b49ea0f7a86.js",
-      "component---src-pages-contact-index-jsx-44ee2d3e6b49ea0f7a86.js.map"
+      "component---src-pages-contact-index-jsx-6c85bf2ce482d42a1a0f.js",
+      "component---src-pages-contact-index-jsx-6c85bf2ce482d42a1a0f.js.map"
     ],
     "component---src-pages-about-index-jsx": [
-      "component---src-pages-about-index-jsx-d9e20e574250299a0435.js",
-      "component---src-pages-about-index-jsx-d9e20e574250299a0435.js.map"
+      "component---src-pages-about-index-jsx-7c9e34984c25789fc4cb.js",
+      "component---src-pages-about-index-jsx-7c9e34984c25789fc4cb.js.map"
     ],
     "component---src-pages-work-spendmapp-index-jsx": [
-      "component---src-pages-work-spendmapp-index-jsx-574b8fd9cb2c0c567d2e.js",
-      "component---src-pages-work-spendmapp-index-jsx-574b8fd9cb2c0c567d2e.js.map"
+      "component---src-pages-work-spendmapp-index-jsx-5e4de311d95188d0a2f4.js",
+      "component---src-pages-work-spendmapp-index-jsx-5e4de311d95188d0a2f4.js.map"
     ],
     "path---work-spendmapp": [
       "path---work-spendmapp-a0e39f21c11f6a62c5ab.js",
@@ -49,14 +49,14 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-b0056864c27bdfdfee11.js",
+      "commons-81df2b2fcf180fc8d06b.js",
       "build-js-styles.css",
-      "commons-b0056864c27bdfdfee11.js.map",
+      "commons-81df2b2fcf180fc8d06b.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-work-dlb-index-jsx": [
-      "component---src-pages-work-dlb-index-jsx-53f4b4965f3c880d6e2e.js",
-      "component---src-pages-work-dlb-index-jsx-53f4b4965f3c880d6e2e.js.map"
+      "component---src-pages-work-dlb-index-jsx-aac562d21f1d2d38d915.js",
+      "component---src-pages-work-dlb-index-jsx-aac562d21f1d2d38d915.js.map"
     ],
     "path---work-dlgsc": [
       "path---work-dlgsc-a0e39f21c11f6a62c5ab.js",
@@ -67,8 +67,8 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-404-jsx": [
-      "component---src-pages-404-jsx-7ed0978c5e34eccc353e.js",
-      "component---src-pages-404-jsx-7ed0978c5e34eccc353e.js.map"
+      "component---src-pages-404-jsx-736d65975acbcb9081be.js",
+      "component---src-pages-404-jsx-736d65975acbcb9081be.js.map"
     ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
@@ -83,18 +83,16 @@
       "path---work-cityatlas-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-849ee73b0a21b8bb2b00.js",
-      "component---src-pages-index-jsx-849ee73b0a21b8bb2b00.js.map"
+      "component---src-pages-index-jsx-ebfe0d230eb9c5ebfb20.js",
+      "component---src-pages-index-jsx-ebfe0d230eb9c5ebfb20.js.map"
     ],
     "path---work-dlb": [
       "path---work-dlb-a0e39f21c11f6a62c5ab.js",
       "path---work-dlb-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-2172aa9a71883b38d2c9.js",
-      "build-js-styles.css",
-      "app-2172aa9a71883b38d2c9.js.map",
-      "build-js-styles.css.map"
+      "app-9cbb748ba031fc79b670.js",
+      "app-9cbb748ba031fc79b670.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
@@ -105,8 +103,8 @@
       "path---about-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-work-cityatlas-index-jsx": [
-      "component---src-pages-work-cityatlas-index-jsx-0f5fedbd60cd426c4b6a.js",
-      "component---src-pages-work-cityatlas-index-jsx-0f5fedbd60cd426c4b6a.js.map"
+      "component---src-pages-work-cityatlas-index-jsx-0f96bd62bc7a189f4134.js",
+      "component---src-pages-work-cityatlas-index-jsx-0f96bd62bc7a189f4134.js.map"
     ],
     "path---work-landuse": [
       "path---work-landuse-a0e39f21c11f6a62c5ab.js",
