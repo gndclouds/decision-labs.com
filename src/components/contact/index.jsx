@@ -31,13 +31,8 @@ const Contact = ({ title }) => (
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink to="https://github.com/sabman/">
+        <OutboundLink to="https://github.com/decision-labs/">
           <Icon name="github" /> GitHub
-        </OutboundLink>
-      </li>
-      <li>
-        <OutboundLink to="https://twitter.com/sabman/">
-          <Icon name="twitter" /> Twitter
         </OutboundLink>
       </li>
     </ul>
