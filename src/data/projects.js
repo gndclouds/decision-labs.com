@@ -1,104 +1,135 @@
 const projects = [
   {
-    className: "click",
-    summary:
-      "The City Atlas is a project exploring spatial patterns across metropolitan areas",
+    className: "product",
+    summary: "Full-stack geospatial backend-as-a-service.",
     description:
-      "The City Atlas is a project exploring spatial patterns across metropolitan areas. It is designed to illustrate our cities’ current and future employment and service accessibility. You can look at how easy it is to get to jobs by public transport; the effect of automation on job availability; the concentration of jobs, including knowledge jobs; and how well serviced you are, if you live in different parts of the city.",
-    links: {
-      website: "http://cityatlas.com.au/"
-    },
-    slug: "cityatlas",
-    title: "City Atlas",
-    cover: require("./cityatlas.gif"),
-    theme: {
-      background: "#00a5d1"
-      // light: true // Invert text color.
-    }
+      "Geobase is a Supabase fork with PostGIS, vector/raster tile servers, and STAC integration. It provides developers with cloud-native geospatial infrastructure to build scalable applications.",
+    links: { website: "https://geobase.app" },
+    slug: "geobase",
+    title: "Geobase",
+    cover: require("./geobase.png"),
+    theme: { background: "#f4f5fa", light: true }
   },
   {
-    className: "kindyNow",
-    summary:
-      "Geospatial Land Use & Planning tool based on machine learning models",
+    className: "product",
+    summary: "Natural-language EO analytics assistant.",
     description:
-      "As part of Land Use and Infrastructure Plan (LUIP) Digital Model, Open Space Modelling and Social Infrastructure Modelling aims to verify whether the municipality’s existing and proposed open space access and social infrastructure can meet the current and forthcoming demand created by population growth out to 2036. Through comprehensive internal research and engagement, a baseline of public, community and private sector facilities data was injected into the model.",
-    links: {
-      website: "http://vimeo.com/320035818"
-    },
-    slug: "landuse",
-    title: "City Analytics",
-    cover: require("./cityanalytics.png"),
-    theme: {
-      background: "#F7F7F7",
-      light: true // Invert text color.
-    }
+      "EarthGPT enables policy analysts, journalists, and researchers to query satellite data and climate models using natural language, backed by ViTs, LLMs, and RAG pipelines.",
+    links: { website: "https://earthgpt.ai" },
+    slug: "earthgpt",
+    title: "EarthGPT",
+    cover: require("./earthgpt.png"),
+    theme: { background: "#d4f0ff", light: true }
   },
   {
-    className: "click",
-    summary:
-      "UNLOCK YOUR ECONOMY: Track event impact, economic growth, online, visitor and escape expenditure",
+    className: "product",
+    summary: "Satellite image authenticity verification.",
     description:
-      "Spendmapp is an online application that allows users to view expenditure activity in and from their region. It does this by taking bank transaction (EFTPOS) data and applying a proprietary data transformation to capture virtually all economic activity within a region.",
-    links: {
-      website: "http://spendmapp.com.au/"
-    },
+      "Verisat.ai detects fake or manipulated satellite imagery by analyzing noise patterns, FFT fingerprints, and patch-level inconsistencies. Built to support journalists and analysts.",
+    links: { website: "https://verisat.ai" },
+    slug: "verisat",
+    title: "Verisat.ai",
+    cover: require("./verisat.png"),
+    theme: { background: "#fef3c7", light: true }
+  },
+  {
+    className: "product",
+    summary: "JavaScript-native GeoAI toolkit.",
+    description:
+      "GeoAI.js brings HuggingFace transformers.js models to the browser and Node.js, enabling client-side geospatial AI. Includes live demos and docs for developers.",
+    links: { website: "https://docs.geobase.app/geoai-live" },
+    slug: "geoai-js",
+    title: "GeoAI.js",
+    cover: require("./geoai.png"),
+    theme: { background: "#e0f2fe", light: true }
+  },
+  {
+    className: "consulting",
+    summary: "Local government expenditure analytics.",
+    description:
+      "Spendmapp helps councils in Australia track and analyze community expenditure patterns using anonymized EFTPOS transaction data, improving local economic planning.",
+    links: { website: "https://decision-labs.com/spendmapp" },
     slug: "spendmapp",
     title: "Spendmapp",
     cover: require("./spendmapp.png"),
-    theme: {
-      background: "#bdf1ff",
-      light: true // Invert text color.
-    }
+    theme: { background: "#bdf1ff", light: true }
   },
   {
-    className: "kindyNow",
-    summary: "Cloud Based Geospatial Database as a Service",
+    className: "consulting",
+    summary: "Agriculture Statistics Platform (ADB-funded).",
     description:
-      "SpacialDB, is a backend (think database) for Web and Mobile apps with a strong emphasis on Geospatial functionality. We provide developers with an easy to use API to quickly import, query and update their data without needing to worry about the backend management, maintenance and scaling. The service makes it really easy for developers to build advanced Geospatial applications directly via their iPhone, Android or WP7 SDKs. SpacialDB also integrates with existing cloud hosting services such as Heroku, Engine Yard, Joyent and Rackspace for Web apps. In 2015 it was acquired by QGISCloud",
-    links: {
-      website: "https://qgiscloud.com/"
-    },
-    slug: "spacialdb",
-    title: "SpacialDB",
-    cover: require("./spacialdb.jpg"),
-    theme: {
-      background: "#f4f5fa",
-      light: true // Invert text color.
-    }
+      "KP-ASIS integrates satellite data, surveys, and mobile workflows to improve agricultural statistics for Pakistan's Khyber Pakhtunkhwa province.",
+    links: { website: "https://decision-labs.com/kp-asis" },
+    slug: "kp-asis",
+    title: "KP-ASIS",
+    cover: require("./kpas.png"),
+    theme: { background: "#f7f7f7", light: true }
   },
   {
-    className: "click",
-    summary:
-      "Public access a range of information on different population groups sourced from the national Census of Population and Housing",
+    className: "consulting",
+    summary: "Drone/ERP–GIS integration for construction.",
     description:
-      "The Office of Multicultural Interests developed this website so that Members of Parliament, State Government agencies, local governments, non-government organisations (NGOs), community groups, students and other members of the public, would be able to access a range of information on different population groups sourced from the national Census of Population and Housing. Information is available for key demographic, cultural and socioeconomic characteristics of people living across the State. It profiles these characteristics for all Western Australian electoral divisions and local government areas.",
-    links: {
-      // website: "http://vimeo.com/320035818"
-      website: "https://geografia.com.au/dlgsc/"
-    },
-    slug: "dlgsc",
-    title: "DLGSC Cultural Atlas of Western Australia",
-    cover: require("./dlgsc.png"),
-    theme: {
-      background: "#a77e60"
-      // light: true // Invert text color.
-    }
+      "NCC Drone Services in the Middle East integrates drones with ERP and GIS systems to streamline construction monitoring and reporting.",
+    links: { website: "https://decision-labs.com/ncc-drone" },
+    slug: "ncc-drone",
+    title: "NCC Drone Services",
+    cover: require("./ncc.png"),
+    theme: { background: "#fff7ed", light: true }
   },
   {
-    className: "kindyNow",
-    summary: "Deep Learning Hardware & Software Stack",
+    className: "consulting",
+    summary: "Community-driven urban data platform.",
     description:
-      "Applied research in deep learning requires the fastest possible experiment turnaround times to rapidly explore multiple network architectures and manipulate and curate datasets to reduce solution delivery times for internal and external customers. The Deep Learning Box is a system that is designed and built for this specific task. Our goal is to build the fastest machine learning training device that you can plug and play for all your deep learning workloads.",
-    links: {
-      website: "http://deeplearningbox.com/"
-    },
-    slug: "dlb",
-    title: "Deep Learning Box",
-    cover: require("./dlb.png"),
-    theme: {
-      background: "#f4f5fa",
-      light: true // Invert text color.
-    }
+      "Know Your City Academy (KYCA) builds civic data commons in collaboration with SDI, supporting participatory mapping and policy advocacy.",
+    links: { website: "https://decision-labs.com/kyca" },
+    slug: "kyca",
+    title: "KYCA Data Commons",
+    cover: require("./kyca.png"),
+    theme: { background: "#e0e7ff", light: true }
+  },
+  {
+    className: "research",
+    summary: "EO deepfake detection research.",
+    description:
+      "In collaboration with ESA Φ-Lab, Decision Labs develops methods to detect manipulated satellite imagery and benchmark models for authenticity verification.",
+    links: { website: "https://esa.int" },
+    slug: "esa-philab",
+    title: "ESA Φ-Lab Collaboration",
+    cover: require("./esa.png"),
+    theme: { background: "#eef2ff", light: true }
+  },
+  {
+    className: "research",
+    summary: "On-orbit satellite data applications.",
+    description:
+      "Partnerships with Kuva Space (Finland) and SITAEL (Italy) to explore satellite data applications and in-orbit processing workflows.",
+    links: { website: "https://decision-labs.com/research" },
+    slug: "kuva-sitael",
+    title: "Kuva Space & SITAEL",
+    cover: require("./kuva.png"),
+    theme: { background: "#dcfce7", light: true }
+  },
+  {
+    className: "domain",
+    summary: "Urban greening for climate resilience.",
+    description:
+      "At Earthna Summit 2025 (Doha), Decision Labs showcased EarthGPT simulations of surface temperature reduction from urban greening interventions.",
+    links: { website: "https://earthna.qa" },
+    slug: "earthna",
+    title: "Urban Greening (Earthna Summit)",
+    cover: require("./earthna.png"),
+    theme: { background: "#ecfccb", light: true }
+  },
+  {
+    className: "domain",
+    summary: "Global mangrove monitoring for dMRV.",
+    description:
+      "Decision Labs contributes to global mangrove ecosystem monitoring, supporting conservation and carbon markets via digital MRV (measurement, reporting, verification).",
+    links: { website: "https://mangrovealliance.org" },
+    slug: "mangrove",
+    title: "Mangrove Monitoring",
+    cover: require("./mangrove.png"),
+    theme: { background: "#bbf7d0", light: true }
   }
 ];
 

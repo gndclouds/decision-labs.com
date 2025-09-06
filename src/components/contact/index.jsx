@@ -21,7 +21,7 @@ const Contact = ({ title }) => (
     <div className={styles.lineBreak} />
     <ul className={styles.social}>
       <li>
-        <OutboundLink to="https://calendly.com/sabman/">
+        <OutboundLink to="https://cal.com/decision-labs">
           <Icon name="calender" /> Book a 30min meeting
         </OutboundLink>
       </li>

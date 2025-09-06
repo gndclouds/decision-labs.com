@@ -10,10 +10,10 @@ import styles from './styles.module.css';
 
 // Featured projects - selecting the most impactful ones
 const featuredProjects = [
-  projects.find(p => p.slug === 'cityatlas'),
+  projects.find(p => p.slug === 'geobase'),
+  projects.find(p => p.slug === 'earthgpt'),
+  projects.find(p => p.slug === 'verisat'),
   projects.find(p => p.slug === 'spendmapp'),
-  projects.find(p => p.slug === 'dlb'),
-  projects.find(p => p.slug === 'dlgsc'),
 ].filter(Boolean);
 
 const Index = ({ location }) => (
@@ -21,31 +21,31 @@ const Index = ({ location }) => (
     <Meta location={location} />
     <Fullscreen className={styles.intro} firstItem>
       <Wrapper>
-        <h1>Transforming decisions through data</h1>
+        <h1>Geospatial AI for Global Impact</h1>
 
         <p className={styles.heroSubtitle}>
-          <em>We help purpose-driven organizations unlock the power of their data to make smarter decisions,
-          drive growth, and create measurable impact through advanced analytics and AI.</em>
+          <em>We build cutting-edge geospatial AI products and provide consulting services for satellite data analysis,
+          earth observation, and location intelligence that drive meaningful change.</em>
         </p>
 
         <div className={styles.heroMetrics}>
           <div className={styles.metric}>
-            <div className={styles.metricNumber}>50+</div>
-            <div className={styles.metricLabel}>Projects Delivered</div>
+            <div className={styles.metricNumber}>12+</div>
+            <div className={styles.metricLabel}>Active Projects</div>
           </div>
           <div className={styles.metric}>
-            <div className={styles.metricNumber}>15+</div>
-            <div className={styles.metricLabel}>Industries Served</div>
+            <div className={styles.metricNumber}>4</div>
+            <div className={styles.metricLabel}>AI Products</div>
           </div>
           <div className={styles.metric}>
-            <div className={styles.metricNumber}>10M+</div>
-            <div className={styles.metricLabel}>Data Points Analyzed</div>
+            <div className={styles.metricNumber}>3</div>
+            <div className={styles.metricLabel}>Research Collaborations</div>
           </div>
         </div>
 
         <div className={styles.heroActions}>
           <a
-            href="https://cal.com/decision-labs/15min"
+            href="https://cal.com/decision-labs"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}
@@ -69,7 +69,7 @@ const Index = ({ location }) => (
         <div className={styles.featuredHeader}>
           <div className={styles.sectionNumber}>01</div>
           <h2>Featured Projects</h2>
-          <p><em>Delivering data-driven solutions that transform businesses and communities</em></p>
+          <p><em>Building AI-powered geospatial products and providing cutting-edge consulting for global impact</em></p>
         </div>
 
         <div className={styles.projectGrid}>
@@ -77,10 +77,14 @@ const Index = ({ location }) => (
             // Map project types to expertise areas
             const getExpertiseAreas = (slug) => {
               switch (slug) {
-                case 'cityatlas': return ['Geospatial Analytics', 'Urban Planning'];
+                case 'geobase': return ['Geospatial Backend', 'Cloud Infrastructure'];
+                case 'earthgpt': return ['AI Analytics', 'Earth Observation'];
+                case 'verisat': return ['AI Verification', 'Computer Vision'];
                 case 'spendmapp': return ['Economic Analytics', 'Data Visualization'];
-                case 'dlb': return ['Deep Learning', 'AI Infrastructure'];
-                case 'dlgsc': return ['Demographics', 'Cultural Analytics'];
+                case 'geoai-js': return ['JavaScript AI', 'Geospatial ML'];
+                case 'kp-asis': return ['Agricultural Stats', 'Satellite Data'];
+                case 'esa-philab': return ['Research', 'Deepfake Detection'];
+                case 'mangrove': return ['Environmental AI', 'Conservation'];
                 default: return ['Data Science'];
               }
             };
@@ -128,7 +132,7 @@ const Index = ({ location }) => (
           <div className={styles.projectsCta}>
             <p>Ready to transform your data challenges into opportunities?</p>
             <a
-              href="https://cal.com/decision-labs/15min"
+              href="https://cal.com/decision-labs"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.bookCallButton}
