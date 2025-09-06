@@ -1,2 +1,0 @@
-webpackJsonp([0xa2789ed55fefa800],{"./node_modules/json-loader/index.js!./.cache/json/work-dlgsc.json":function(o,e){o.exports={pathContext:{}}}});
-//# sourceMappingURL=path---work-dlgsc-a0e39f21c11f6a62c5ab.js.map
