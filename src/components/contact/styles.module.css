@@ -35,6 +35,7 @@
 .bookingButton {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   padding: 12px 20px;
   background: var(--colorWhite);
   color: var(--colorBlack) !important;
@@ -45,6 +46,12 @@
   transition: all 0.3s ease;
 }
 
+.bookingButton svg {
+  fill: var(--colorBlack) !important;
+  width: 18px;
+  height: 18px;
+}
+
 .bookingButton:hover {
   background: transparent;
   color: var(--colorWhite) !important;
@@ -52,14 +59,25 @@
   transform: translateY(-2px);
 }
 
+.bookingButton:hover svg {
+  fill: var(--colorWhite) !important;
+}
+
 /* Regular social links styling */
 .social li:not(:first-child) a {
-  color: var(--colorWhite);
+  color: var(--colorWhite) !important;
   text-decoration: none;
   padding: 8px 0;
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   transition: opacity 0.3s ease;
+}
+
+.social li:not(:first-child) a svg {
+  fill: var(--colorWhite) !important;
+  width: 18px;
+  height: 18px;
 }
 
 .social li:not(:first-child) a:hover {
