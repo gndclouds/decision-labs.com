@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Icon from "../icon";
-import OutboundLink from "../outbound-link";
+import Icon from '../icon';
+import OutboundLink from '../outbound-link';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 const Contact = ({ title }) => (
   <div className={styles.contact}>
@@ -21,55 +21,25 @@ const Contact = ({ title }) => (
     <div className={styles.lineBreak} />
     <ul className={styles.social}>
       <li>
-        <OutboundLink to="https://cal.com/decision-labs">
+        <OutboundLink to="https://cal.com/decision-labs" className={styles.bookingButton}>
           <Icon name="calender" /> Book a 30min meeting
         </OutboundLink>
       </li>
-      {/*<li>
+      <li>
+        <OutboundLink to="https://www.linkedin.com/company/spacialdb-ug-decision-labs/">
+          <Icon name="linkedin" /> LinkedIn
+        </OutboundLink>
+      </li>
+      <li>
         <OutboundLink to="https://github.com/sabman/">
-          <Icon name="github" /> code
-        </OutboundLink>
-      </li>
-      <li>
-        <OutboundLink to="https://scholar.google.com/citations?hl=en&view_op=list_works&user=Pg-Ik9AAAAAJ">
-          <Icon name="googlescholar" /> papers
-        </OutboundLink>
-      </li>
-      <li>
-        <OutboundLink to="https://leanpub.com/u/sabman">
-          <Icon name="leanpub" /> books
-        </OutboundLink>
-      </li>
-      <li>
-        <OutboundLink to="https://medium.com/@sabman/">
-          <Icon name="medium" /> writings
-        </OutboundLink>
-      </li>
-       <li>
-        <OutboundLink to="https://www.goodreads.com/user/show/15529944-shoaib-burq">
-          <Icon name="goodreads" /> reading
-        </OutboundLink>
-      </li>
-      <li>
-        <OutboundLink to="https://www.linkedin.com/in/shoaibburq/">
-          <Icon name="linkedin" /> linkedin
+          <Icon name="github" /> GitHub
         </OutboundLink>
       </li>
       <li>
         <OutboundLink to="https://twitter.com/sabman/">
-          <Icon name="twitter" /> tweets
+          <Icon name="twitter" /> Twitter
         </OutboundLink>
       </li>
-      <li>
-        <OutboundLink to="https://www.instagram.com/sabman">
-          <Icon name="instagram" /> instagram
-        </OutboundLink>
-      </li>
-      <li>
-        <OutboundLink to="https://soundcloud.com/sabman">
-          <Icon name="soundcloud" /> music
-        </OutboundLink>
-      </li> */}
     </ul>
   </div>
 );
