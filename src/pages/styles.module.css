@@ -5,91 +5,53 @@
   color: var(--colorWhite);
 }
 
-.heroContent {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: center;
-  position: relative;
-}
-
-.heroMain {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .intro h1 {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .heroSubtitle {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  opacity: 0.9;
-  line-height: 1.6;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.heroSubtitle em {
+  font-style: italic;
+  opacity: 1;
 }
 
 .link {
   border-bottom: 3px solid var(--colorWhite);
 }
 
-/* Expertise Areas */
-.expertiseAreas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
-  margin: 4rem 0;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+/* Hero Metrics */
+.heroMetrics {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 0;
+  justify-content: center;
 }
 
-.expertiseItem {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+.metric {
   text-align: center;
 }
 
-.expertiseItem:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.expertiseIcon {
+.metricNumber {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.expertiseItem h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  color: var(--colorWhite);
+  font-family: Medium, Arial, Helvetica, sans-serif;
   font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0.5rem;
 }
 
-.expertiseItem p {
-  font-size: 1rem;
+.metricLabel {
+  font-size: 0.9rem;
   opacity: 0.8;
-  line-height: 1.5;
-  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* Hero Actions */
@@ -562,34 +524,11 @@
 
 @media (--small) {
   .intro h1 {
-    font-size: 2.5rem;
+    font-size: 1.7142rem;
   }
   
   .heroSubtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  
-  .expertiseAreas {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 2.5rem 0;
-  }
-  
-  .expertiseItem {
-    padding: 1.5rem;
-  }
-  
-  .expertiseIcon {
-    font-size: 2rem;
-  }
-  
-  .expertiseItem h3 {
     font-size: 1.125rem;
-  }
-  
-  .expertiseItem p {
-    font-size: 0.9rem;
   }
   
   .scrollIndicator {
@@ -608,6 +547,19 @@
   
   .link {
     border-width: 2px;
+  }
+  
+  .heroMetrics {
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .metricNumber {
+    font-size: 2rem;
+  }
+  
+  .metricLabel {
+    font-size: 0.8rem;
   }
   
   .heroActions {

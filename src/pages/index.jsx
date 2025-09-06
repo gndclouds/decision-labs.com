@@ -21,53 +21,44 @@ const Index = ({ location }) => (
     <Meta location={location} />
     <Fullscreen className={styles.intro} firstItem>
       <Wrapper>
-        <div className={styles.heroContent}>
-          <div className={styles.heroMain}>
-            <h1>AI-Powered Products for Real-World Impact</h1>
+        <h1>Solving the World's Most Complex Challenges</h1>
 
-            <p className={styles.heroSubtitle}>
-              We specialize in building intelligent products that harness AI and geospatial data. 
-              From model training and deployment to full-stack product development, we turn complex 
-              data challenges into scalable solutions.
-            </p>
+        <p className={styles.heroSubtitle}>
+          <em>We build AI-driven products, train custom models, and create intelligent systems that turn complex data into actionable insights. From concept to deployment.</em>
+        </p>
 
-            <div className={styles.expertiseAreas}>
-              <div className={styles.expertiseItem}>
-                <div className={styles.expertiseIcon}>🤖</div>
-                <h3>AI Model Development</h3>
-                <p>Custom machine learning models for computer vision, NLP, and geospatial analysis</p>
-              </div>
-              <div className={styles.expertiseItem}>
-                <div className={styles.expertiseIcon}>🚀</div>
-                <h3>Product Engineering</h3>
-                <p>Full-stack development of AI-powered SaaS platforms and applications</p>
-              </div>
-              <div className={styles.expertiseItem}>
-                <div className={styles.expertiseIcon}>🌍</div>
-                <h3>Geospatial Intelligence</h3>
-                <p>Satellite data processing, earth observation, and location-based insights</p>
-              </div>
-            </div>
-
-            <div className={styles.heroActions}>
-              <a
-                href="https://cal.com/decision-labs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.ctaButton}
-              >
-                Book a Discovery Call
-              </a>
-              <Link to="/work" className={styles.ctaButtonSecondary}>
-                View Our Work
-              </Link>
-            </div>
+        <div className={styles.heroMetrics}>
+          <div className={styles.metric}>
+            <div className={styles.metricNumber}>12+</div>
+            <div className={styles.metricLabel}>AI Products Built</div>
           </div>
-
-          <div className={styles.scrollIndicator}>
-            <span>scroll down</span>
-            <div className={styles.scrollArrow} />
+          <div className={styles.metric}>
+            <div className={styles.metricNumber}>50+</div>
+            <div className={styles.metricLabel}>Models Trained</div>
           </div>
+          <div className={styles.metric}>
+            <div className={styles.metricNumber}>3</div>
+            <div className={styles.metricLabel}>Research Partnerships</div>
+          </div>
+        </div>
+
+        <div className={styles.heroActions}>
+          <a
+            href="https://cal.com/decision-labs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.ctaButton}
+          >
+            Book a Discovery Call
+          </a>
+          <Link to="/work" className={styles.ctaButtonSecondary}>
+            View Our Work
+          </Link>
+        </div>
+
+        <div className={styles.scrollIndicator}>
+          <span>scroll down</span>
+          <div className={styles.scrollArrow} />
         </div>
       </Wrapper>
     </Fullscreen>
@@ -77,7 +68,7 @@ const Index = ({ location }) => (
         <div className={styles.featuredHeader}>
           <div className={styles.sectionNumber}>01</div>
           <h2>Featured Projects</h2>
-          <p><em>Building AI-powered geospatial products and providing cutting-edge consulting for global impact</em></p>
+          <p><em>Custom AI solutions, model training, and intelligent systems that solve real-world problems</em></p>
         </div>
 
         <div className={styles.projectGrid}>
@@ -85,15 +76,15 @@ const Index = ({ location }) => (
             // Map project types to expertise areas
             const getExpertiseAreas = (slug) => {
               switch (slug) {
-                case 'geobase': return ['Geospatial Backend', 'Cloud Infrastructure'];
-                case 'earthgpt': return ['AI Analytics', 'Earth Observation'];
-                case 'verisat': return ['AI Verification', 'Computer Vision'];
-                case 'spendmapp': return ['Economic Analytics', 'Data Visualization'];
-                case 'geoai-js': return ['JavaScript AI', 'Geospatial ML'];
-                case 'kp-asis': return ['Agricultural Stats', 'Satellite Data'];
-                case 'esa-philab': return ['Research', 'Deepfake Detection'];
-                case 'mangrove': return ['Environmental AI', 'Conservation'];
-                default: return ['Data Science'];
+                case 'geobase': return ['Backend Engineering', 'Cloud Infrastructure'];
+                case 'earthgpt': return ['LLM Integration', 'AI Analytics'];
+                case 'verisat': return ['Computer Vision', 'Model Training'];
+                case 'spendmapp': return ['Data Engineering', 'Analytics Platform'];
+                case 'geoai-js': return ['JavaScript AI', 'Model Deployment'];
+                case 'kp-asis': return ['Data Systems', 'Mobile Apps'];
+                case 'esa-philab': return ['Research', 'Deep Learning'];
+                case 'mangrove': return ['AI Models', 'Monitoring Systems'];
+                default: return ['AI Solutions'];
               }
             };
 
