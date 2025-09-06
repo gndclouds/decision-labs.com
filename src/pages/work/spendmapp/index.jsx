@@ -24,7 +24,7 @@ const images = {
   ]
 };
 
-const Cityatlas = ({ location }) => {
+const Spendmapp = ({ location }) => {
   const project = projects.find(p => p.slug === "spendmapp");
 
   const image = (
@@ -55,4 +55,4 @@ const Cityatlas = ({ location }) => {
   );
 };
 
-export default Cityatlas;
+export default Spendmapp;

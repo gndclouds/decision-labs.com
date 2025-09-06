@@ -10,9 +10,6 @@ import styles from './styles.module.css';
 
 // Featured projects - selecting the most impactful ones
 const featuredProjects = [
-  projects.find(p => p.slug === 'geobase'),
-  projects.find(p => p.slug === 'earthgpt'),
-  projects.find(p => p.slug === 'verisat'),
   projects.find(p => p.slug === 'spendmapp'),
 ].filter(Boolean);
 
