@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 import styles from './styles.module.css';
 import '../css/reset.css';
@@ -17,6 +18,7 @@ const Layout = ({ children, location }) => {
     <div>
       <Header />
       <div className={styles.page}>{appChildren}</div>
+      <Footer />
     </div>
   );
 };
