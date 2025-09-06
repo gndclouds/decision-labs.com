@@ -10,7 +10,7 @@ import styles from './styles.module.css';
 
 // Featured projects - selecting the most impactful ones
 const featuredProjects = [
-  projects.find(p => p.slug === 'spendmapp'),
+  // Temporarily disabled until individual project pages are fixed
 ].filter(Boolean);
 
 const Index = ({ location }) => (
