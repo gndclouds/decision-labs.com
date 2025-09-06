@@ -70,10 +70,10 @@ const Work = ({ location }) => {
       <section className={styles.hero}>
         <Wrapper>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>Our Work</h1>
+            <h1 className={styles.heroTitle}>Our AI Products</h1>
             <p className={styles.heroSubtitle}>
-              From AI-powered products to cutting-edge research, we're advancing 
-              the field of geospatial intelligence through innovative solutions.
+              Innovative AI-driven products that solve complex challenges and 
+              transform data into actionable insights across industries.
             </p>
             <div className={styles.heroStats}>
               <div className={styles.stat}>
@@ -81,12 +81,12 @@ const Work = ({ location }) => {
                 <div className={styles.statLabel}>AI Products</div>
               </div>
               <div className={styles.stat}>
-                <div className={styles.statNumber}>{consultingProjects.length}</div>
-                <div className={styles.statLabel}>Consulting Projects</div>
+                <div className={styles.statNumber}>50+</div>
+                <div className={styles.statLabel}>Models Trained</div>
               </div>
               <div className={styles.stat}>
-                <div className={styles.statNumber}>{researchProjects.length}</div>
-                <div className={styles.statLabel}>Research Collaborations</div>
+                <div className={styles.statNumber}>12+</div>
+                <div className={styles.statLabel}>Active Deployments</div>
               </div>
             </div>
           </div>
@@ -96,37 +96,10 @@ const Work = ({ location }) => {
       {/* Products Section */}
       <ProjectSection
         title="AI Products"
-        description="Innovative geospatial AI platforms and tools that democratize earth observation data"
+        description="Innovative AI platforms and tools that solve complex data challenges"
         projects={productProjects}
         sectionClass={styles.productsSection}
         icon="🚀"
-      />
-
-      {/* Consulting Section */}
-      <ProjectSection
-        title="Consulting Services"
-        description="Custom solutions for governments, organizations, and enterprises seeking geospatial insights"
-        projects={consultingProjects}
-        sectionClass={styles.consultingSection}
-        icon="🏢"
-      />
-
-      {/* Research Section */}
-      <ProjectSection
-        title="Research Collaborations"
-        description="Partnerships with leading institutions advancing the science of earth observation"
-        projects={researchProjects}
-        sectionClass={styles.researchSection}
-        icon="🔬"
-      />
-
-      {/* Domain Section */}
-      <ProjectSection
-        title="Domain Applications"
-        description="Real-world applications demonstrating the impact of geospatial AI across industries"
-        projects={domainProjects}
-        sectionClass={styles.domainSection}
-        icon="🌍"
       />
 
       {/* Contact Section */}
