@@ -21,45 +21,53 @@ const Index = ({ location }) => (
     <Meta location={location} />
     <Fullscreen className={styles.intro} firstItem>
       <Wrapper>
-        <h1>Geospatial AI for Global Impact</h1>
+        <div className={styles.heroContent}>
+          <div className={styles.heroMain}>
+            <h1>AI-Powered Products for Real-World Impact</h1>
 
-        <p className={styles.heroSubtitle}>
-          <em>We build cutting-edge geospatial AI products and provide consulting services for satellite data analysis,
-          earth observation, and location intelligence that drive meaningful change.</em>
-        </p>
+            <p className={styles.heroSubtitle}>
+              We specialize in building intelligent products that harness AI and geospatial data. 
+              From model training and deployment to full-stack product development, we turn complex 
+              data challenges into scalable solutions.
+            </p>
 
-        <div className={styles.heroMetrics}>
-          <div className={styles.metric}>
-            <div className={styles.metricNumber}>12+</div>
-            <div className={styles.metricLabel}>Active Projects</div>
+            <div className={styles.expertiseAreas}>
+              <div className={styles.expertiseItem}>
+                <div className={styles.expertiseIcon}>🤖</div>
+                <h3>AI Model Development</h3>
+                <p>Custom machine learning models for computer vision, NLP, and geospatial analysis</p>
+              </div>
+              <div className={styles.expertiseItem}>
+                <div className={styles.expertiseIcon}>🚀</div>
+                <h3>Product Engineering</h3>
+                <p>Full-stack development of AI-powered SaaS platforms and applications</p>
+              </div>
+              <div className={styles.expertiseItem}>
+                <div className={styles.expertiseIcon}>🌍</div>
+                <h3>Geospatial Intelligence</h3>
+                <p>Satellite data processing, earth observation, and location-based insights</p>
+              </div>
+            </div>
+
+            <div className={styles.heroActions}>
+              <a
+                href="https://cal.com/decision-labs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ctaButton}
+              >
+                Book a Discovery Call
+              </a>
+              <Link to="/work" className={styles.ctaButtonSecondary}>
+                View Our Work
+              </Link>
+            </div>
           </div>
-          <div className={styles.metric}>
-            <div className={styles.metricNumber}>4</div>
-            <div className={styles.metricLabel}>AI Products</div>
-          </div>
-          <div className={styles.metric}>
-            <div className={styles.metricNumber}>3</div>
-            <div className={styles.metricLabel}>Research Collaborations</div>
-          </div>
-        </div>
 
-        <div className={styles.heroActions}>
-          <a
-            href="https://cal.com/decision-labs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.ctaButton}
-          >
-            Book a Discovery Call
-          </a>
-          <Link to="/work" className={styles.ctaButtonSecondary}>
-            View Our Work
-          </Link>
-        </div>
-
-        <div className={styles.scrollIndicator}>
-          <span>scroll down</span>
-          <div className={styles.scrollArrow} />
+          <div className={styles.scrollIndicator}>
+            <span>scroll down</span>
+            <div className={styles.scrollArrow} />
+          </div>
         </div>
       </Wrapper>
     </Fullscreen>
