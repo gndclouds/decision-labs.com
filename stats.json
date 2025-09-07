@@ -1,8 +1,16 @@
 {
   "assetsByChunkName": {
+    "path---work-geoai-js": [
+      "path---work-geoai-js-a0e39f21c11f6a62c5ab.js",
+      "path---work-geoai-js-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-work-index-jsx": [
       "component---src-pages-work-index-jsx-8c02520bb8c483138ad0.js",
       "component---src-pages-work-index-jsx-8c02520bb8c483138ad0.js.map"
+    ],
+    "component---src-pages-work-geoai-js-index-jsx": [
+      "component---src-pages-work-geoai-js-index-jsx-f3b8c7a2a8e94617e8a6.js",
+      "component---src-pages-work-geoai-js-index-jsx-f3b8c7a2a8e94617e8a6.js.map"
     ],
     "path---work": [
       "path---work-a0e39f21c11f6a62c5ab.js",
@@ -25,17 +33,17 @@
       "component---src-pages-about-index-jsx-7c9e34984c25789fc4cb.js.map"
     ],
     "component---src-pages-work-verisat-index-jsx": [
-      "component---src-pages-work-verisat-index-jsx-eb19aa09fc01e474f66c.js",
-      "component---src-pages-work-verisat-index-jsx-eb19aa09fc01e474f66c.js.map"
+      "component---src-pages-work-verisat-index-jsx-39789c6f3f10a32fd9c1.js",
+      "component---src-pages-work-verisat-index-jsx-39789c6f3f10a32fd9c1.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-0787bb6401349e659eb8.js",
+      "commons-af13990e4ee1e638d9f6.js",
       "build-js-styles.css",
-      "commons-0787bb6401349e659eb8.js.map",
+      "commons-af13990e4ee1e638d9f6.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -63,12 +71,12 @@
       "component---src-pages-index-jsx-9f2026741e9e187c7072.js.map"
     ],
     "component---src-pages-work-earthgpt-index-jsx": [
-      "component---src-pages-work-earthgpt-index-jsx-4c0a39d8d9a4d670d572.js",
-      "component---src-pages-work-earthgpt-index-jsx-4c0a39d8d9a4d670d572.js.map"
+      "component---src-pages-work-earthgpt-index-jsx-d0b86d6683b8e54c4049.js",
+      "component---src-pages-work-earthgpt-index-jsx-d0b86d6683b8e54c4049.js.map"
     ],
     "app": [
-      "app-42b59df3c16cadb709c3.js",
-      "app-42b59df3c16cadb709c3.js.map"
+      "app-1848e9d63950f48af006.js",
+      "app-1848e9d63950f48af006.js.map"
     ],
     "path---work-verisat": [
       "path---work-verisat-a0e39f21c11f6a62c5ab.js",
@@ -79,8 +87,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-work-geobase-index-jsx": [
-      "component---src-pages-work-geobase-index-jsx-ce9628ffb11c0da135e1.js",
-      "component---src-pages-work-geobase-index-jsx-ce9628ffb11c0da135e1.js.map"
+      "component---src-pages-work-geobase-index-jsx-22adb143a98eabc3af89.js",
+      "component---src-pages-work-geobase-index-jsx-22adb143a98eabc3af89.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
