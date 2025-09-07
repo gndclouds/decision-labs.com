@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { siteMetadata as config } from '../../../gatsby-config';
 
 const Meta = props => {
-  const mainTitle = `${config.title} - Software Developer / Geomatics Engineer`;
+  const mainTitle = config.title;
   const metaTitle = props.title ? `${props.title} | ${mainTitle}` : mainTitle;
   const metaDescription = props.description || config.description;
   const absoluteUrl = `${config.url}${props.location.pathname}`;
