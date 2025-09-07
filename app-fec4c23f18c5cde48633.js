@@ -56,14 +56,17 @@ webpackJsonp([15178676390636814000],{
 	  "component---src-pages-404-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-404-jsx!./src/pages/404.jsx"),
 	  "component---src-pages-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-index-jsx!./src/pages/index.jsx"),
 	  "component---src-pages-about-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-about-index-jsx!./src/pages/about/index.jsx"),
+	  "component---src-pages-work-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-index-jsx!./src/pages/work/index.jsx"),
 	  "component---src-pages-contact-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-contact-index-jsx!./src/pages/contact/index.jsx"),
-	  "component---src-pages-work-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-index-jsx!./src/pages/work/index.jsx")
+	  "component---src-pages-work-earthgpt-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-earthgpt-index-jsx!./src/pages/work/earthgpt/index.jsx"),
+	  "component---src-pages-work-verisat-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-verisat-index-jsx!./src/pages/work/verisat/index.jsx"),
+	  "component---src-pages-work-geobase-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-geobase-index-jsx!./src/pages/work/geobase/index.jsx")
 	};
 	
 	exports.json = (_exports$json = {
 	  "layout-index.json": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json"),
 	  "404.json": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---404!./.cache/json/404.json")
-	}, _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---index!./.cache/json/index.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "404-html.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---404-html!./.cache/json/404-html.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "about.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---about!./.cache/json/about.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "contact.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---contact!./.cache/json/contact.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "work.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work!./.cache/json/work.json")), _exports$json);
+	}, _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---index!./.cache/json/index.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "404-html.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---404-html!./.cache/json/404-html.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "about.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---about!./.cache/json/about.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "work.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work!./.cache/json/work.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "contact.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---contact!./.cache/json/contact.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "work-earthgpt.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work-earthgpt!./.cache/json/work-earthgpt.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "work-verisat.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work-verisat!./.cache/json/work-verisat.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "work-geobase.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work-geobase!./.cache/json/work-geobase.json")), _exports$json);
 	
 	exports.layouts = {
 	  "component---src-layouts-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-layouts-index-jsx!./.cache/layouts/index.js")
@@ -420,6 +423,69 @@ webpackJsonp([15178676390636814000],{
 	          cb(true)
 	        } else {
 	          cb(null, function() { return __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/layout-index.json") })
+	        }
+	      });
+	     }
+	    
+
+/***/ }),
+
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work-earthgpt!./.cache/json/work-earthgpt.json":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(12114033245492760000, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/work-earthgpt.json") })
+	        }
+	      });
+	     }
+	    
+
+/***/ }),
+
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work-geobase!./.cache/json/work-geobase.json":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(13228345962960610000, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/work-geobase.json") })
+	        }
+	      });
+	     }
+	    
+
+/***/ }),
+
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---work-verisat!./.cache/json/work-verisat.json":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(15213657503351070000, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/work-verisat.json") })
 	        }
 	      });
 	     }
@@ -843,7 +909,7 @@ webpackJsonp([15178676390636814000],{
 /***/ "./.cache/pages.json":
 /***/ (function(module, exports) {
 
-	module.exports = [{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404.json","path":"/404/"},{"componentChunkName":"component---src-pages-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"index.json","path":"/"},{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404-html.json","path":"/404.html"},{"componentChunkName":"component---src-pages-about-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"about.json","path":"/about/"},{"componentChunkName":"component---src-pages-contact-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"contact.json","path":"/contact/"},{"componentChunkName":"component---src-pages-work-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"work.json","path":"/work/"}]
+	module.exports = [{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404.json","path":"/404/"},{"componentChunkName":"component---src-pages-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"index.json","path":"/"},{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404-html.json","path":"/404.html"},{"componentChunkName":"component---src-pages-about-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"about.json","path":"/about/"},{"componentChunkName":"component---src-pages-work-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"work.json","path":"/work/"},{"componentChunkName":"component---src-pages-contact-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"contact.json","path":"/contact/"},{"componentChunkName":"component---src-pages-work-earthgpt-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"work-earthgpt.json","path":"/work/earthgpt/"},{"componentChunkName":"component---src-pages-work-verisat-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"work-verisat.json","path":"/work/verisat/"},{"componentChunkName":"component---src-pages-work-geobase-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"work-geobase.json","path":"/work/geobase/"}]
 
 /***/ }),
 
@@ -1545,6 +1611,48 @@ webpackJsonp([15178676390636814000],{
 
 /***/ }),
 
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-earthgpt-index-jsx!./src/pages/work/earthgpt/index.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(15080602716045949000, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/shoaib/code/decision-labs.com/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-env/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/pages/work/earthgpt/index.jsx") })
+	        }
+	      });
+	     }
+	    
+
+/***/ }),
+
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-geobase-index-jsx!./src/pages/work/geobase/index.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(17574479608095707000, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/shoaib/code/decision-labs.com/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-env/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/pages/work/geobase/index.jsx") })
+	        }
+	      });
+	     }
+	    
+
+/***/ }),
+
 /***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-index-jsx!./src/pages/work/index.jsx":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1564,7 +1672,28 @@ webpackJsonp([15178676390636814000],{
 	     }
 	    
 
+/***/ }),
+
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-work-verisat-index-jsx!./src/pages/work/verisat/index.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(8390329650766599000, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/shoaib/code/decision-labs.com/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-env/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/shoaib/code/decision-labs.com/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/pages/work/verisat/index.jsx") })
+	        }
+	      });
+	     }
+	    
+
 /***/ })
 
 });
-//# sourceMappingURL=app-fd21adb4bccc4e0e8351.js.map
+//# sourceMappingURL=app-fec4c23f18c5cde48633.js.map
