@@ -15,7 +15,7 @@ const projects = [
     summary: "Natural-language EO analytics assistant.",
     description:
       "EarthGPT enables policy analysts, journalists, and researchers to query satellite data and climate models using natural language, backed by ViTs, LLMs, and RAG pipelines.",
-    links: { website: "https://earthgpt.ai" },
+    links: { website: "https://earthgpt.app" },
     slug: "earthgpt",
     title: "EarthGPT",
     cover: require("./earthgpt-linkedin.jpg"),
