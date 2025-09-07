@@ -9,9 +9,9 @@ const Contact = ({ title }) => (
   <div className={styles.contact}>
     <div className={styles.contactContent}>
       <div className={styles.contactHeader}>
-        <h1>{title || "Ready to transform your geospatial challenges?"}</h1>
+        <h1>{title || "Ready to transform your data challenges?"}</h1>
         <p className={styles.subtitle}>
-          Let's discuss how our AI-powered geospatial solutions can drive your next breakthrough.
+          Let's discuss how our AI-powered solutions can drive your next breakthrough.
         </p>
       </div>
       
