@@ -10,7 +10,9 @@ import styles from './styles.module.css';
 
 // Featured projects - selecting the most impactful ones
 const featuredProjects = [
-  // Temporarily disabled until individual project pages are fixed
+  projects.find(p => p.slug === 'geobase'),
+  projects.find(p => p.slug === 'earthgpt'),
+  projects.find(p => p.slug === 'verisat')
 ].filter(Boolean);
 
 const Index = ({ location }) => (

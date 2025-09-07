@@ -18,7 +18,7 @@ const projects = [
     links: { website: "https://earthgpt.ai" },
     slug: "earthgpt",
     title: "EarthGPT",
-    cover: require("./earthgpt.png"),
+    cover: require("./earthgpt-linkedin.jpg"),
     theme: { background: "#d4f0ff", light: true }
   },
   {
@@ -133,4 +133,4 @@ const projects = [
   }
 ];
 
-export default projects;
+module.exports = projects;
