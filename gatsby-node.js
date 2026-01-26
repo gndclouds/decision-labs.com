@@ -8,9 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     query {
-      allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/blog/" } }
-      ) {
+      allMarkdownRemark {
         nodes {
           id
           frontmatter {
@@ -34,6 +32,12 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = result.data.allMarkdownRemark.nodes
 
   posts.forEach((post) => {
+    // Skip placeholder files
+    const slug = post.frontmatter.slug || post.fields?.slug || post.id
+    if (slug === 'placeholder' || post.frontmatter.title === 'Placeholder') {
+      return
+    }
+
     // Determine if this is an internal post
     // Internal if: linkType is 'internal', or no/empty link field, or linkType is not 'external'
     const hasExternalLink = post.frontmatter.link && post.frontmatter.link.trim() !== '' && post.frontmatter.link.startsWith('http')
@@ -43,8 +47,6 @@ exports.createPages = async ({ graphql, actions }) => {
       (post.frontmatter.linkType !== 'external' && !hasExternalLink)
 
     if (isInternal) {
-      // Use custom slug from frontmatter, or generate from title
-      const slug = post.frontmatter.slug || post.fields?.slug || post.id
       const postPath = `/blog/${slug}`
 
       createPage({
@@ -81,10 +83,7 @@ async function generateRSSFeed(graphql) {
   try {
     const result = await graphql(`
       query {
-        allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/blog/" } }
-          sort: { frontmatter: { date: DESC } }
-        ) {
+        allMarkdownRemark {
           nodes {
             id
             excerpt(pruneLength: 200)
