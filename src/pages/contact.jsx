@@ -1,48 +1,14 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { FileText, Mic, Handshake, BookOpen } from 'lucide-react'
+import { Mail, Calendar } from 'lucide-react'
+import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import '../styles/global.css'
-import postsData from '../data/posts.json'
 import Footer from '../components/Footer'
 
-const IndexPage = ({ location }) => {
+const ContactPage = ({ location }) => {
   const pathname = location?.pathname || ''
-  const [activeIndex, setActiveIndex] = React.useState(0)
   const [textColor, setTextColor] = React.useState('black')
   const headerRef = React.useRef(null)
-  
-  // Get featured posts, or if none, get recent posts
-  const featuredPosts = postsData.filter(post => post.featured === true)
-  const postsToShow = featuredPosts.length > 0 
-    ? featuredPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
-    : postsData.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3)
-  
-  const currentPost = postsToShow[activeIndex]
-
-  // Get icon component for category
-  const getCategoryIcon = (category) => {
-    const iconProps = { size: 16, style: { display: 'inline-block', verticalAlign: 'middle' } }
-    switch (category) {
-      case 'Blog':
-        return <FileText {...iconProps} />
-      case 'Talk':
-        return <Mic {...iconProps} />
-      case 'Partnership':
-        return <Handshake {...iconProps} />
-      default:
-        return <BookOpen {...iconProps} />
-    }
-  }
-
-  React.useEffect(() => {
-    if (postsToShow.length <= 1) return
-    
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % postsToShow.length)
-    }, 5000) // Change every 5 seconds
-
-    return () => clearInterval(interval)
-  }, [postsToShow.length])
 
   // Detect background color behind header (throttled for performance)
   React.useEffect(() => {
@@ -110,9 +76,9 @@ const IndexPage = ({ location }) => {
       window.removeEventListener('resize', checkBackground)
     }
   }, [])
-
+  
   return (
-    <div className="page-container landing-page">
+    <div className="page-container">
       <header className="header" ref={headerRef}>
         <Link to="/" className="logo" style={{ color: textColor }}>Decision Labs</Link>
         <nav className="nav">
@@ -123,63 +89,62 @@ const IndexPage = ({ location }) => {
         </nav>
       </header>
 
-      <main className="main-content">
-        <div className="content-cards">
-          <div className="card card-primary">
-            <div className="card-header">
-            </div>
+      <main className="main-content contact-content">
+        <div className="content-cards contact-cards">
+          <div className="card card-primary contact-main-card">
+            <h1 className="contact-page-title">Contact</h1>
             <div className="card-body">
               <p className="mission-text">
-                We build AI-driven products, train custom models, and create intelligent systems that turn complex data into actionable insights. From concept to deployment.
+                Let's discuss how we can help transform your data into actionable insights. Reach out to start a conversation about your next project.
               </p>
+            </div>
+            <div className="card-footer">
             </div>
           </div>
 
-          <div className="card card-secondary">
-            <div className="card-header">
-              {currentPost?.metadata?.category ? (
-                <span className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  {getCategoryIcon(currentPost.metadata.category)}
-                  <span>{currentPost.metadata.category}</span>
-                </span>
-              ) : (
-                <span className="card-title">Featured</span>
-              )}
-            </div>
-            <div className="card-body featured-post-body">
-              {currentPost ? (
-                <>
-                  <div className="featured-post-content">
-                    <h3 className="featured-post-title">{currentPost.title}</h3>
-                    <p className="featured-post-description">{currentPost.description}</p>
-                  </div>
-                </>
-              ) : (
-                <p className="project-text">No posts available</p>
-              )}
-            </div>
-            <div className="card-footer">
-              {postsToShow.length > 1 && (
-                <div className="featured-post-tabs">
-                  {postsToShow.map((_, index) => (
-                    <button
-                      key={index}
-                      className={`tab-indicator ${index === activeIndex ? 'active' : ''}`}
-                      onClick={() => setActiveIndex(index)}
-                      aria-label={`View post ${index + 1}`}
-                    />
-                  ))}
+          <div className="contact-links-container">
+            <div className="contact-links-grid">
+              <a href="https://github.com" className="contact-link-card" target="_blank" rel="noopener noreferrer">
+                <div className="contact-link-icon">
+                  <FaGithub size={24} />
                 </div>
-              )}
+                <div className="contact-link-label">GitHub</div>
+              </a>
+              <a href="mailto:team@decision-labs.com" className="contact-link-card">
+                <div className="contact-link-icon">
+                  <Mail size={24} className="lucide-icon" />
+                </div>
+                <div className="contact-link-label">Email</div>
+              </a>
+              <a href="https://www.linkedin.com/company/spacialdb-ug-decision-labs/" className="contact-link-card" target="_blank" rel="noopener noreferrer">
+                <div className="contact-link-icon">
+                  <FaLinkedin size={24} />
+                </div>
+                <div className="contact-link-label">LinkedIn</div>
+              </a>
+              <a href="https://twitter.com/geobaseapp" className="contact-link-card" target="_blank" rel="noopener noreferrer">
+                <div className="contact-link-icon">
+                  <FaXTwitter size={24} />
+                </div>
+                <div className="contact-link-label">Twitter</div>
+              </a>
+              <a href="https://cal.com/decision-labs" className="contact-link-card contact-link-card-wide" target="_blank" rel="noopener noreferrer">
+                <div className="contact-link-icon">
+                  <Calendar size={24} className="lucide-icon" />
+                </div>
+                <div className="contact-link-label">Book a Call</div>
+                <div className="contact-link-helper">30-minute consultation • Free • No commitment</div>
+              </a>
             </div>
           </div>
         </div>
-    </main>
-    <Footer />
+      </main>
+      <Footer />
     </div>
   )
 }
 
-export default IndexPage
+export default ContactPage
 
-export const Head = () => <title>Decision Labs</title>
+export const Head = () => <title>Contact - Decision Labs</title>
+
