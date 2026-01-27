@@ -121,7 +121,25 @@ The blog combines two types of posts:
 
 #### Internal Posts (Markdown)
 
-Create a new `.md` file in `src/blog/` with frontmatter:
+To add a new blog post to the website, follow these steps:
+
+1. **Create a new markdown file** in the `src/blog/` directory:
+   ```bash
+   touch src/blog/your-post-title.md
+   ```
+
+2. **Add front matter and content** to the file. The front matter must be at the top of the file, enclosed in `---` markers.
+
+3. **Start the development server** (if not already running):
+   ```bash
+   npm run dev
+   ```
+
+4. **View your post** at `http://localhost:8000/blog/your-post-slug`
+
+**Front Matter Format:**
+
+All blog posts must start with YAML front matter. Here's the complete format with all available fields:
 
 ```markdown
 ---
@@ -130,41 +148,105 @@ date: "2024-01-15"
 author: "Decision Labs"
 category: "Blog"
 readTime: "5 min read"
-featured: true
-image: "https://example.com/image.jpg"
+featured: false
+image: "https://via.placeholder.com/800x400"
 linkType: "internal"
 slug: "your-post-slug"
 link: ""
 ---
 
 Your blog post content here. Use standard Markdown syntax.
-
-## Headers
-
-- Lists
-- Work great
-
-**Bold** and _italic_ text supported.
 ```
 
-**Frontmatter Fields:**
+**Front Matter Fields:**
 
-- `title` (required) - Post title
-- `date` (required) - Publication date (YYYY-MM-DD format)
-- `author` (optional) - Author name
-- `category` (optional) - Post category (used for filtering)
-- `readTime` (optional) - Estimated reading time
-- `featured` (optional) - Boolean, marks post as featured
-- `image` (optional) - Hero image URL
-- `slug` (optional) - Custom URL slug (defaults to filename)
-- `linkType` (optional) - Set to `"internal"` for internal posts
-- `link` (optional) - Leave empty for internal posts
+| Field | Required | Type | Description | Example |
+|-------|----------|------|-------------|---------|
+| `title` | ✅ Yes | String | Post title displayed on the blog | `"Introduction to Decision Science"` |
+| `date` | ✅ Yes | String | Publication date in YYYY-MM-DD format | `"2024-01-15"` |
+| `author` | ❌ No | String | Author name | `"Decision Labs"` |
+| `category` | ❌ No | String | Post category (used for filtering on blog page) | `"Blog"`, `"Talk"`, `"Partnership"` |
+| `readTime` | ❌ No | String | Estimated reading time | `"5 min read"`, `"8 min read"` |
+| `featured` | ❌ No | Boolean | Mark post as featured (default: `false`) | `true`, `false` |
+| `image` | ❌ No | String | Hero image URL (can be external URL or relative path) | `"https://via.placeholder.com/800x400"` or `"images/blog/my-image.png"` |
+| `linkType` | ❌ No | String | Set to `"internal"` for internal posts | `"internal"` |
+| `slug` | ❌ No | String | Custom URL slug (defaults to filename without extension) | `"introduction-to-decision-science"` |
+| `link` | ❌ No | String | Leave empty for internal posts | `""` |
+
+**Real Examples:**
+
+Here are examples from existing blog posts:
+
+**Example 1: Basic Blog Post**
+```markdown
+---
+title: "Introduction to Decision Science"
+date: "2024-01-15"
+author: "Decision Labs"
+category: "Blog"
+readTime: "5 min read"
+featured: false
+image: "https://via.placeholder.com/800x400"
+linkType: "internal"
+slug: "introduction-to-decision-science"
+link: ""
+---
+
+Decision science is an interdisciplinary field that combines elements of mathematics, statistics, psychology, and economics to help organizations make better decisions.
+
+## The Foundation of Decision Science
+
+Your content here...
+```
+
+**Example 2: Featured Post with Local Image**
+```markdown
+---
+title: "Building AI-Driven Products"
+date: "2024-01-10"
+author: "Decision Labs"
+category: "Blog"
+readTime: "8 min read"
+featured: true
+image: "images/blog/ai-products-hero.png"
+linkType: "internal"
+slug: "building-ai-driven-products"
+link: ""
+---
+
+Building AI-driven products requires more than just implementing machine learning models...
+```
+
+**Image Paths:**
+
+- **External URLs**: Use full URLs for images hosted elsewhere
+  ```yaml
+  image: "https://via.placeholder.com/800x400"
+  ```
+
+- **Local Images**: Place images in `src/images/blog/` and reference them relative to the static folder
+  ```yaml
+  image: "images/blog/geobase-duckdb-1-1-3.png"
+  ```
 
 **URL Structure:**
 
 - Posts are accessible at `/blog/{slug}`
 - If no `slug` is provided, Gatsby generates one from the filename
 - Example: `introduction-to-decision-science.md` → `/blog/introduction-to-decision-science`
+- The slug should be URL-friendly (lowercase, hyphens instead of spaces)
+
+**Markdown Content:**
+
+After the front matter, write your blog post content using standard Markdown syntax:
+
+- Headers: `# H1`, `## H2`, `### H3`
+- **Bold text**: `**bold**`
+- *Italic text*: `*italic*`
+- Lists: `- item` or `1. item`
+- Links: `[text](url)`
+- Images: `![alt](url)`
+- Code blocks: Use triple backticks with language identifier
 
 #### External Posts (JSON)
 

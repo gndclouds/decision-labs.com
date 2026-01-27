@@ -16,11 +16,16 @@ const BlogPage = ({ location, data }) => {
   
   // Get internal posts from markdown files (auto-detected from src/blog/)
   // Internal posts: no link OR linkType is explicitly 'internal'
-  const markdownPosts = data.allMarkdownRemark.nodes
+  const markdownPosts = (data?.allMarkdownRemark?.nodes || [])
     .map(node => {
       const hasLink = node.frontmatter.link && node.frontmatter.link.trim() !== ''
       const linkType = node.frontmatter.linkType
       const slug = node.frontmatter.slug || node.fields?.slug || node.id
+      
+      // Skip placeholder files
+      if (slug === 'placeholder' || node.frontmatter.title === 'Placeholder') {
+        return null
+      }
       
       // Internal if: no link, or linkType is explicitly 'internal'
       const isInternal = !hasLink || linkType === 'internal'
@@ -46,7 +51,7 @@ const BlogPage = ({ location, data }) => {
         },
       }
     })
-    .filter(post => post.isInternal) // Only include internal posts from markdown
+    .filter(post => post !== null && post.isInternal) // Only include internal posts from markdown, excluding placeholder
   
   // Get external posts from posts.json
   // External posts: have a link (assumed to be external sources like YouTube, Twitter, external blogs)
@@ -329,10 +334,7 @@ export default BlogPage
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
-      sort: { frontmatter: { date: DESC } }
-    ) {
+    allMarkdownRemark {
       nodes {
         id
         excerpt(pruneLength: 120)
