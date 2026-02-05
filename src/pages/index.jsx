@@ -136,28 +136,80 @@ const IndexPage = ({ location }) => {
           </div>
 
           <div className="card card-secondary">
-            <div className="card-header">
-              {currentPost?.metadata?.category ? (
-                <span className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  {getCategoryIcon(currentPost.metadata.category)}
-                  <span>{currentPost.metadata.category}</span>
-                </span>
-              ) : (
-                <span className="card-title">Featured</span>
-              )}
-            </div>
-            <div className="card-body featured-post-body">
-              {currentPost ? (
-                <>
-                  <div className="featured-post-content">
-                    <h3 className="featured-post-title">{currentPost.title}</h3>
-                    <p className="featured-post-description">{currentPost.description}</p>
+            {currentPost?.link ? (
+              currentPost.link.startsWith('/') ? (
+                <Link
+                  to={currentPost.link}
+                  className="card-clickable"
+                  style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', flex: 1 }}
+                >
+                  <div className="card-header">
+                    {currentPost?.metadata?.category ? (
+                      <span className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        {getCategoryIcon(currentPost.metadata.category)}
+                        <span>{currentPost.metadata.category}</span>
+                      </span>
+                    ) : (
+                      <span className="card-title">Featured</span>
+                    )}
                   </div>
-                </>
+                  <div className="card-body featured-post-body">
+                    <div className="featured-post-content">
+                      <h3 className="featured-post-title">{currentPost.title}</h3>
+                      <p className="featured-post-description">{currentPost.description}</p>
+                    </div>
+                  </div>
+                </Link>
               ) : (
-                <p className="project-text">No posts available</p>
-              )}
-            </div>
+                <a
+                  href={currentPost.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-clickable"
+                  style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', flex: 1 }}
+                >
+                  <div className="card-header">
+                    {currentPost?.metadata?.category ? (
+                      <span className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        {getCategoryIcon(currentPost.metadata.category)}
+                        <span>{currentPost.metadata.category}</span>
+                      </span>
+                    ) : (
+                      <span className="card-title">Featured</span>
+                    )}
+                  </div>
+                  <div className="card-body featured-post-body">
+                    <div className="featured-post-content">
+                      <h3 className="featured-post-title">{currentPost.title}</h3>
+                      <p className="featured-post-description">{currentPost.description}</p>
+                    </div>
+                  </div>
+                </a>
+              )
+            ) : (
+              <>
+                <div className="card-header">
+                  {currentPost?.metadata?.category ? (
+                    <span className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      {getCategoryIcon(currentPost.metadata.category)}
+                      <span>{currentPost.metadata.category}</span>
+                    </span>
+                  ) : (
+                    <span className="card-title">Featured</span>
+                  )}
+                </div>
+                <div className="card-body featured-post-body">
+                  {currentPost ? (
+                    <div className="featured-post-content">
+                      <h3 className="featured-post-title">{currentPost.title}</h3>
+                      <p className="featured-post-description">{currentPost.description}</p>
+                    </div>
+                  ) : (
+                    <p className="project-text">No posts available</p>
+                  )}
+                </div>
+              </>
+            )}
             <div className="card-footer">
               {postsToShow.length > 1 && (
                 <div className="featured-post-tabs">
