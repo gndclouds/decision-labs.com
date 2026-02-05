@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { Sparkles, Brain, Users } from 'lucide-react'
 import '../styles/global.css'
 import projectsData from '../data/projects.json'
 import Footer from '../components/Footer'
@@ -59,13 +58,6 @@ const WorkCard = ({ project, projectImage }) => {
                   day: 'numeric'
                 })}
               </span>
-              {project.metadata?.technologies && (
-                <div className="work-card-technologies">
-                  {project.metadata.technologies.map((tech, index) => (
-                    <span key={index} className="work-tech-tag">{tech}</span>
-                  ))}
-                </div>
-              )}
             </div>
           </div>
         </div>
@@ -223,34 +215,21 @@ const WorkPage = ({ location }) => {
       <main className="main-content work-content">
         <div className="content-cards work-cards">
           <div className="card card-primary work-hero-card">
-            <h1 className="work-page-title">Work</h1>
-            <div className="work-metrics">
-              <div className="work-metric work-metric-item">
-                <div className="work-metric-top">
-                  <div className="work-metric-icon">
-                    <Sparkles size={24} />
-                  </div>
-                  <div className="work-metric-number">12+</div>
+            <div className="work-hero-header">
+              <h1 className="work-page-title">Work</h1>
+              <div className="work-metrics">
+                <div className="work-metric work-metric-item">
+                  <span className="work-metric-number">12+</span>
+                  <span className="work-metric-label">AI Products</span>
                 </div>
-                <div className="work-metric-label">AI PRODUCTS BUILT</div>
-              </div>
-              <div className="work-metric work-metric-item">
-                <div className="work-metric-top">
-                  <div className="work-metric-icon">
-                    <Brain size={24} />
-                  </div>
-                  <div className="work-metric-number">50+</div>
+                <div className="work-metric work-metric-item">
+                  <span className="work-metric-number">50+</span>
+                  <span className="work-metric-label">Models Trained</span>
                 </div>
-                <div className="work-metric-label">MODELS TRAINED</div>
-              </div>
-              <div className="work-metric work-metric-item">
-                <div className="work-metric-top">
-                  <div className="work-metric-icon">
-                    <Users size={24} />
-                  </div>
-                  <div className="work-metric-number">3</div>
+                <div className="work-metric work-metric-item">
+                  <span className="work-metric-number">3</span>
+                  <span className="work-metric-label">Research Partnerships</span>
                 </div>
-                <div className="work-metric-label">RESEARCH PARTNERSHIPS</div>
               </div>
             </div>
           </div>
